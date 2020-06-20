@@ -73,6 +73,7 @@ button {
   background: #353b48;
   color: #7f8fa6;
   border: 3px solid #7f8fa6;
+  border-radius: 30px;
 }
 
 #button-paper {
@@ -84,6 +85,7 @@ button {
   background: #353b48;
   color: #487eb0;
   border: 3px solid #487eb0;
+  border-radius: 30px;
 }
 
 #button-scissors {
@@ -95,6 +97,7 @@ button {
   background: #353b48;
   color: #e1b12c;
   border: 3px solid #e1b12c;
+  border-radius: 30px;
 }
 
 .rock {

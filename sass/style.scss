@@ -79,8 +79,8 @@ button {
     background: $color-five;;
     color: $color-one;
     border: 3px solid $color-one;
+    border-radius: 30px;
 }
-
 
 #button-paper {
     background: $color-two;
@@ -89,7 +89,8 @@ button {
 #button-paper:hover{
     background: $color-five;;
     color: $color-two;
-    border: 3px solid $color-two
+    border: 3px solid $color-two;
+    border-radius: 30px;
 }
 
 #button-scissors {
@@ -100,7 +101,9 @@ button {
     background: $color-five;;
     color: $color-three;
     border: 3px solid $color-three;
+    border-radius: 30px;
 }
+
 
 .rock {
     color: $color-one;

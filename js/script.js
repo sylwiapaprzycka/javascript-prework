@@ -34,21 +34,18 @@ function getMoveName(argMoveId) {
   }
 }
 
-function win() {
+function win(argPlayerMove, argComputerMove) {
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 }
 
-function lose() {
+function lose(argPlayerMove, argComputerMove) {
   computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 }
 
-function draw() {
-
-}
 
 /**
  * Zasady gry
@@ -56,19 +53,19 @@ function draw() {
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
-    printMessage('Wygrywasz 🔥!');
-    win();
+    printMessage('Wygrywasz! 🔥');
+    win(argPlayerMove, argComputerMove);
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz! 🔥');
-    win();
+    win(argPlayerMove, argComputerMove);
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz! 🔥');
-    win();
+    win(argPlayerMove, argComputerMove);
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis 🙌');
   } else {
-    printMessage('Przegrywasz 🙈');
-    lose()
+    printMessage('Przegrywasz... 🙈');
+    lose(argPlayerMove, argComputerMove)
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + '.');
 }
