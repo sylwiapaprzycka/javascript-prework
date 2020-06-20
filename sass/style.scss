@@ -1,0 +1,12 @@
+$font-main: 'Roboto', sans-serif;
+$color-one: #fed330;
+$color-two: #fc5c65;
+$color-three: #2bcbba;
+
+body {
+    font-family: $font-main;    
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
