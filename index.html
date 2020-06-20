@@ -3,24 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header>
+		<h1>kamień papier nożyce</h1>
+	</header>
 	<div class="container">
-		<h1><span class="rock">kamień</span> <span class="paper">papier </span><span class="scissors">nożyce</span> </h1>
-		<p>Zasady gry są proste. Wybierz odpowiedni przycisk: <span class="rock">kamień</span>, <span class="paper">papier</span>, <span class="scissors">nożyce</span>. Komputer losuje swój ruch.</p>
+		<p>Wybierz odpowiedni przycisk: kamień, papier, nożyce:</p>
 		<ul>
 			<li><span class="rock">kamień</span> tępi nożczki</li>
-			<li><span class="scissors">nożyce</span> tną papier</li>
 			<li><span class="paper">papier</span> owija kamień</li>
+			<li><span class="scissors">nożyce</span> tną papier</li>
 		</ul>
+		<p class="action"> Czas na Twój ruch!</p>
 		<div id="buttons">
 			<button id="button-rock">Kamień</button>
 			<button id="button-paper">Papier</button>
 			<button id="button-scissors">Nożyce</button>
 		</div>
 		<div id="messages"></div>
+		<div id="result">
+			<div id="user-label" class="badge">Ty</div>
+			<div id="computer-label" class="badge">komp</div>
+			<span id="user-score">0</span>:<span id="computer-score">0</span>
+		</div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

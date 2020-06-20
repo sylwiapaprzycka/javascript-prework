@@ -1,23 +1,52 @@
-body {
-  font-family: "Roboto", sans-serif;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-h1 {
-  text-transform: uppercase;
-  color: #2bcbba;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #353b48;
+}
+
+header {
+  background: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  text-transform: capitalize;
+  color: #353b48;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  border: 1px solid #fc5c65;
   border-radius: 50px;
-  padding: 20px;
   text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-weight: 400;
+}
+
+ul {
+  margin: 20px;
 }
 
 li {
   list-style-type: none;
+}
+
+.action {
+  font-weight: 700;
+  font-size: 24px;
+  padding: 20px;
 }
 
 button {
@@ -28,60 +57,97 @@ button {
   margin: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  font-family: "Asap", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: all 1s;
+  transition: all 0.3s ease;
 }
 
 #button-rock {
-  background: #fed330;
+  background: #7f8fa6;
   color: #ffffff;
 }
 
 #button-rock:hover {
-  background: #fff;
-  color: #fed330;
-  border: 1px solid #fed330;
+  background: #353b48;
+  color: #7f8fa6;
+  border: 3px solid #7f8fa6;
 }
 
 #button-paper {
-  background: #4b7bec;
+  background: #487eb0;
   color: #ffffff;
 }
 
 #button-paper:hover {
-  background: #fff;
-  color: #4b7bec;
-  border: 1px solid #4b7bec;
+  background: #353b48;
+  color: #487eb0;
+  border: 3px solid #487eb0;
 }
 
 #button-scissors {
-  background: #2bcbba;
+  background: #e1b12c;
   color: #ffffff;
 }
 
 #button-scissors:hover {
-  background: #fff;
-  color: #2bcbba;
-  border: 1px solid #2bcbba;
+  background: #353b48;
+  color: #e1b12c;
+  border: 3px solid #e1b12c;
 }
 
 .rock {
-  color: #fed330;
+  color: #7f8fa6;
+  font-weight: 400;
 }
 
 .paper {
-  color: #4b7bec;
+  color: #487eb0;
+  font-weight: 400;
 }
 
 .scissors {
-  color: #2bcbba;
+  color: #e1b12c;
+  font-weight: 400;
 }
 
 #messages {
-  text-transform: uppercase;
-  color: #fc5c65;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+#result {
+  border: 3px solid #fff;
+  border-radius: 4px;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+  font-size: 46px;
+}
+
+.badge {
+  background: #c23616;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 10px;
+  width: 55px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -25px;
 }
 /*# sourceMappingURL=style.css.map */
