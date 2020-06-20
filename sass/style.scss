@@ -1,12 +1,88 @@
 $font-main: 'Roboto', sans-serif;
 $color-one: #fed330;
-$color-two: #fc5c65;
+$color-two: #4b7bec;
 $color-three: #2bcbba;
+$color-four: #fc5c65;
 
 body {
     font-family: $font-main;    
 }
+
+h1 {
+text-transform: uppercase;
+color: $color-three
+}
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    border: 1px solid $color-four;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-main;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 1s;
+}
+
+#button-rock {
+    background: $color-one;
+    color: #ffffff;
+}
+#button-rock:hover{
+    background: #fff;
+    color: $color-one;
+    border: 1px solid $color-one;
+}
+
+
+#button-paper {
+    background: $color-two;
+    color: #ffffff;
+}
+#button-paper:hover{
+    background: #fff;
+    color: $color-two;
+    border: 1px solid $color-two
+}
+
+#button-scissors {
+    background: $color-three;
+    color: #ffffff;
+}
+#button-scissors:hover{
+    background: #fff;
+    color: $color-three;
+    border: 1px solid $color-three;
+}
+
+.rock {
+    color: $color-one
+}
+
+.paper {
+    color: $color-two
+}
+
+.scissors {
+    color: $color-three
+}
+
+#messages {
+    text-transform: uppercase;
+    color: $color-four
 }

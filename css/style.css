@@ -1,0 +1,87 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #2bcbba;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid #fc5c65;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s;
+}
+
+#button-rock {
+  background: #fed330;
+  color: #ffffff;
+}
+
+#button-rock:hover {
+  background: #fff;
+  color: #fed330;
+  border: 1px solid #fed330;
+}
+
+#button-paper {
+  background: #4b7bec;
+  color: #ffffff;
+}
+
+#button-paper:hover {
+  background: #fff;
+  color: #4b7bec;
+  border: 1px solid #4b7bec;
+}
+
+#button-scissors {
+  background: #2bcbba;
+  color: #ffffff;
+}
+
+#button-scissors:hover {
+  background: #fff;
+  color: #2bcbba;
+  border: 1px solid #2bcbba;
+}
+
+.rock {
+  color: #fed330;
+}
+
+.paper {
+  color: #4b7bec;
+}
+
+.scissors {
+  color: #2bcbba;
+}
+
+#messages {
+  text-transform: uppercase;
+  color: #fc5c65;
+}
+/*# sourceMappingURL=style.css.map */

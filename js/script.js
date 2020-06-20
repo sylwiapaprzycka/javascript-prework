@@ -7,7 +7,7 @@ buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName){
     clearMessages();
-    console.log(argButtonName + ' został kliknięty");
+    console.log(argButtonName + ' został kliknięty');
 
 var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
@@ -57,7 +57,6 @@ displayResult(playerMove, computerMove);
 
 }
 
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyczki'); });
