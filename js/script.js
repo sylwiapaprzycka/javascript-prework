@@ -4,12 +4,11 @@ const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const result = document.getElementById("result");
 
-let argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
-
+let argButtonName, 
+buttonPaper = document.getElementById('button-paper'), 
+buttonRock = document.getElementById('button-rock'),
+buttonScissors = document.getElementById('button-scissors'), 
 buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName){
     clearMessages();
@@ -45,7 +44,6 @@ function lose(argPlayerMove, argComputerMove) {
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 }
-
 
 /**
  * Zasady gry
