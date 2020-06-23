@@ -15,7 +15,7 @@ function buttonClicked(argButtonName){
     clearMessages();
     console.log('Wybrałeś/aś ' + argButtonName);
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
  * zdefiniowanie gry
